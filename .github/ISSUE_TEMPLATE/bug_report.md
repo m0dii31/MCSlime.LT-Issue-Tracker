@@ -1,38 +1,31 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+<!-- 
 
----
+Užpildyk tik reikalingus laukus.
+Nereikalingus ištrink.
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+-->
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+### **Apibūdink klaidą**  
+Aiškus klaidos aprašymas.
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+<!-- Kaip pakartoti šią klaidą -->
+### **Kaip klaida įvyko**
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+...
+<!--
+Pavyzdys:
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+1. Nueiti į '...'
+2. Paspausti '....'
+3. Pamatyti klaidą
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+arba
 
-**Additional context**
-Add any other context about the problem here.
+Atidariau '...', paspaudžiau '...', parodė klaidos pranešimą.
+-->
+
+### **Nuotraukos**  
+Jei įmanoma, pridėk ekrano nuotraukas čia.
+
+### **Papildoma informacija**  
+Jei reikia - parašyk papildomą informaciją čia.
