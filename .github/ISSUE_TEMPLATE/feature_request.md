@@ -1,20 +1,18 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: Feature Request
+about: Idėjos pasiūlymas projektui
 title: ''
-labels: ''
+labels: 'enhancement'
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Ar šis pasiūlymas išspręs kokią nors problemą? Parašyk tikslų apibūdinimą.**  
+Tikslus ir aiškus pasiūlymo aprašymas.
+Pvz. Teleportuotis pas žaidėjus sunku, todėl norėčiau [...]
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Pasiūlymo alternatyvos**  
+Tikslūs ir aiškus alternatyvų aprašymas, jei tokių yra.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Papildoma informacija**  
+Pridėk papildomą informaciją, nuotraukas ar kt. čia.
