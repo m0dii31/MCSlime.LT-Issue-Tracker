@@ -1,19 +1,22 @@
 <!-- 
 
-Užpildyk tik reikalingus laukus.
-Nereikalingus ištrink.
+ČIA YRA KOMENTARAS
+KOMENTARAI PAČIOJE TEMOJE
+YRA NEMATOMI.
 
+UŽPILDYK TIK REIKALINGUS LAUKUS.
+NEREIKALINGĄ INFORMACIJĄ IŠTRINK.
 -->
 
-### **Apibūdink klaidą**  
+**Apibūdink klaidą**  
 Aiškus klaidos aprašymas.
 
 <!-- Kaip pakartoti šią klaidą -->
-### **Kaip klaida įvyko**
+**Kaip klaida įvyko**
 
 ...
 <!--
-Pavyzdys:
+PAVYZDYS:
 
 1. Nueiti į '...'
 2. Paspausti '....'
@@ -24,8 +27,8 @@ arba
 Atidariau '...', paspaudžiau '...', parodė klaidos pranešimą.
 -->
 
-### **Nuotraukos**  
+**Nuotraukos**  
 Jei įmanoma, pridėk ekrano nuotraukas čia.
 
-### **Papildoma informacija**  
+**Papildoma informacija**  
 Jei reikia - parašyk papildomą informaciją čia.
