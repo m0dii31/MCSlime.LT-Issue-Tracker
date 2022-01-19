@@ -1,9 +1,9 @@
-### **Ar šis pasiūlymas išspręs kokią nors problemą? Parašyk tikslų apibūdinimą.**  
+**Ar šis pasiūlymas išspręs kokią nors problemą? Parašyk tikslų apibūdinimą.**  
 Tikslus ir aiškus pasiūlymo aprašymas.
 Pvz. Teleportuotis pas žaidėjus sunku, todėl norėčiau [...]
 
-### **Pasiūlymo alternatyvos**  
+**Pasiūlymo alternatyvos**  
 Tikslūs ir aiškus alternatyvų aprašymas, jei tokių yra.
 
-### **Papildoma informacija**  
+**Papildoma informacija**  
 Pridėk papildomą informaciją, nuotraukas ar kt. čia.
