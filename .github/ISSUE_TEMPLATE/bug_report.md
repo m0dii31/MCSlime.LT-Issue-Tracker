@@ -13,8 +13,8 @@ Aiškus klaidos aprašymas.
 **Kaip klaida įvyko**
 Atidariau '...', paspaudžiau '...', parodė klaidos pranešimą.
 
-**Nuotraukos**  
-Jei įmanoma, pridėk ekrano nuotraukas čia.
+**Vaizdinė medžiaga**  
+Jei įmanoma, pridėk ekrano nuotraukas ar vaizdo įrašus čia.
 
 **Papildoma informacija**  
 Jei reikia - parašyk papildomą informaciją čia.
