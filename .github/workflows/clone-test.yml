@@ -1,0 +1,18 @@
+name: Pull to main server
+on: [workflow_dispatch]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using key
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd /home/m0dii/test
+          git clone https://github.com/M0diis/MCSlime.LT-Issue-Tracker.git
