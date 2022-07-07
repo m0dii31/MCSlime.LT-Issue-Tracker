@@ -1,0 +1,1060 @@
+root:
+  AUTHOR: misc
+  RESPONSIBLE: misc
+  LANGUAGE: English
+  ENCODING: UTF-8
+  LOCALE: en_US
+  REQUIRESUNICODE: 'false'
+  DEFAULT: 'true'
+  STATE: complete
+  LOCAL:
+    AUTHOR: misc
+    RESPONSIBLE: misc
+    LANGUAGE: English
+    REGION: US
+    STATE: complete
+COMMAND:
+  ADMIN:
+    NOTMEMBER: '%1$s&7 nėra frakcijos narys.'
+    NOTADMIN: '&cTu nesi frakcijos administratorius.'
+    TARGETSELF: '&cNegali naudotis šios komandos sau.'
+    DEMOTES: '&7You have demoted %1$s&7 from the position of faction admin.'
+    DEMOTED: '&7%1$s&7 pažemino jus pareigose.'
+    PROMOTES: '&7You have promoted %1$s&7 to the position of faction admin.'
+    PROMOTED: '%1$s&7 gave %2$s&7 the leadership of %3$s&7.'
+    DESCRIPTION: Hand over your admin rights
+  AHOME:
+    DESCRIPTION: Send a player to their f home no matter what.
+    NOHOME: '%1$s neturi frakcijos namų.'
+    SUCCESS: $1%s was sent to their f home.
+    OFFLINE: '%1$s yra atsijungęs.'
+    TARGET: You were sent to your f home.
+  ANNOUNCE:
+    DESCRIPTION: Announce a message to players in faction.
+  AUTOCLAIM:
+    ENABLED: '&7Now auto-claiming land for &d%1$s&7.'
+    DISABLED: '&7Auto-claiming of land disabled.'
+    REQUIREDRANK: '&cYou must be &d%1$s&c to claim land.'
+    OTHERFACTION: '&cYou can''t claim land for &d%1$s&c.'
+    DESCRIPTION: Auto-claim land as you walk around
+  AUTOHELP:
+    HELPFOR: Help for command "
+  BAN:
+    DESCRIPTION: Ban players from joining your Faction.
+    TARGET: '&cYou were banned from &7%1$s'
+    BANNED: '&7%1$s &cbanned &7%2$s'
+    SELF: '&cYou may not ban yourself'
+    INSUFFICIENTRANK: '&cYour rank is too low to ban &7%1$s'
+    ALREADYBANNED: '&c%1$s is already banned'
+  BANLIST:
+    DESCRIPTION: View a Faction's ban list
+    HEADER: '&6There are &c%d&6 bans for %s'
+    ENTRY: '&7%d. &c%s &r- &a%s &r- &7%s'
+    NOFACTION: '&4You are not in a Faction.'
+    INVALID: We couldn't find a Faction by the name %s
+  BOOM:
+    PEACEFULONLY: '&cThis command is only usable by factions which are specifically
+      designated as peaceful.'
+    TOTOGGLE: to toggle explosions
+    FORTOGGLE: for toggling explosions
+    ENABLED: '%1$s&7 has %2$s explosions in your faction''s territory.'
+    DESCRIPTION: Toggle explosions (peaceful factions only)
+  BYPASS:
+    ENABLE: '&7You have enabled admin bypass mode. You will be able to build or destroy
+      anywhere.'
+    ENABLELOG: ' has ENABLED admin bypass mode.'
+    DISABLE: '&7You have disabled admin bypass mode.'
+    DISABLELOG: ' has DISABLED admin bypass mode.'
+    DESCRIPTION: Enable admin bypass mode
+  CHAT:
+    DISABLED: '&cThe built in chat channels are disabled on this server.'
+    INVALIDMODE: '&cUnrecognised chat mode. &7Please enter either ''a'',''f'',''m'',''t''
+      or ''p'''
+    INSUFFICIENTRANK: '&cYou must be at least moderator to enter this chat.'
+    DESCRIPTION: Change chat mode
+    MODE:
+      PUBLIC: '&7Public chat mode.'
+      ALLIANCE: '&7Alliance only chat mode.'
+      TRUCE: '&7Truce only chat mode.'
+      FACTION: '&7Faction only chat mode.'
+      MOD: '&7Mod only chat mode.'
+  CHATSPY:
+    ENABLE: '&7You have enabled chat spying mode.'
+    ENABLELOG: ' has ENABLED chat spying mode.'
+    DISABLE: '&7You have disabled chat spying mode.'
+    DISABLELOG: ' has DISABLED chat spying mode.'
+    DESCRIPTION: Enable admin chat spy mode
+  CLAIM:
+    INVALIDRADIUS: '&cIf you specify a radius, it must be at least 1.'
+    DENIED: '&cYou do not have permission to claim in a radius.'
+    DESCRIPTION: Claim land from where you are standing
+  CLAIMLINE:
+    INVALIDRADIUS: '&cIf you specify a distance, it must be at least 1.'
+    DENIED: '&cYou do not have permission to claim in a line.'
+    DESCRIPTION: Claim land in a straight line.
+    ABOVEMAX: '&cThe maximum limit for claim line is &c%s&c.'
+    NOTVALID: '%s&c is not a cardinal direction. You may use &dnorth&c, &deast&c,
+      &dsouth &cor &dwest&c.'
+  COLEADER:
+    CANDIDATES: 'Players you can promote: '
+    CLICKTOPROMOTE: 'Click to promote '
+    NOTMEMBER: '%1$s&c is not a member in your faction.'
+    NOTADMIN: '&cYou are not the faction admin.'
+    SELF: '&cThe target player musn''t be yourself.'
+    TARGETISADMIN: '&cThe target player is a faction admin. Demote them first.'
+    REVOKES: '&7You have removed coleader status from %1$s&7.'
+    REVOKED: '%1$s&7 is no longer coleader in your faction.'
+    PROMOTES: '%1$s&7 was promoted to coleader in your faction.'
+    PROMOTED: '&7You have promoted %1$s&7 to coleader.'
+    DESCRIPTION: Give or revoke coleader rights
+    ALREADY:
+      COLEADER: The faction already has a coleader. There can only be 1.
+  CONFIG:
+    NOEXIST: '&cNo configuration setting "&d%1$s&c" exists.'
+    SET:
+      'TRUE': '" option set to true (enabled).'
+      'FALSE': '" option set to false (disabled).'
+      ADDED: '"%1$s" set: "%2$s" added.'
+      REMOVED: '"%1$s" set: "%2$s" removed.'
+    OPTIONSET: '" option set to '
+    COLOURSET: '" color option set to "'
+    INTREQUIRED: 'Cannot set "%1$s": An integer (whole number) value required.'
+    LONGREQUIRED: 'Cannot set "%1$s": A long integer (whole number) value required.'
+    DOUBLEREQUIRED: 'Cannot set "%1$s": A double (numeric) value required.'
+    FLOATREQUIRED: 'Cannot set "%1$s": A float (numeric) value required.'
+    INVALID:
+      COLOUR: 'Cannot set "%1$s": "%2$s" is not a valid color.'
+      COLLECTION: '"%1$s" is not a data collection type which can be modified with
+        this command.'
+      MATERIAL: 'Cannot change "%1$s" set: "%2$s" is not a valid material.'
+      TYPESET: '"%1$s" is not a data type set which can be modified with this command.'
+    MATERIAL:
+      ADDED: '"%1$s" set: Material "%2$s" added.'
+      REMOVED: '"%1$s" set: Material "%2$s" removed.'
+    LOG: ' (Command was run by %1$s.)'
+    ERROR:
+      SETTING: Error setting configuration setting "%1$s" to "%2$s".
+      MATCHING: Configuration setting "%1$s" couldn't be matched, though it should
+        be... please report this error.
+      TYPE: '''%1$s'' is of type ''%2$s'', which cannot be modified with this command.'
+    DESCRIPTION: Change a conf.json setting
+  CONVERT:
+    BACKEND:
+      RUNNING: Already running that backend.
+      INVALID: Invalid backend
+    DESCRIPTION: Convert the plugin backend
+  CREATE:
+    MUSTLEAVE: '&cYou must leave your current faction first.'
+    INUSE: '&cThat tag is already in use.'
+    TOCREATE: frakcijos sukūrimui
+    FORCREATE: už frakcijos sukūrimą.
+    ERROR: '&cĮvyko klaida...'
+    CREATED: '%1$s&7 sukūrė naują frakciją %2$s'
+    YOUSHOULD: '&r'
+    CREATEDLOG: ' created a new faction: '
+    DESCRIPTION: Create a new faction
+  DEINVITE:
+    CANDEINVITE: 'Players you can deinvite: '
+    CLICKTODEINVITE: Click to revoke invite for %1$s
+    ALREADYMEMBER: '%1$s&7 is already a member of %2$s'
+    MIGHTWANT: '&7You might want to: %1$s'
+    REVOKED: '%1$s&7 revoked your invitation to &d%2$s&7.'
+    REVOKES: '%1$s&7 revoked %2$s''s&7 invitation.'
+    DESCRIPTION: Remove a pending invitation
+  DELFWARP:
+    DELETED: '&7Deleted warp &6%1$s'
+    INVALID: '&7Couldn''t find warp &6%1$s'
+    TODELETE: to delete warp
+    FORDELETE: for deleting warp
+    DESCRIPTION: Delete a faction warp
+  DESCRIPTION:
+    CHANGES: 'You have changed the description for &d%1$s&7 to:'
+    CHANGED: '&7The faction %1$s&7 changed their description to:'
+    TOCHANGE: to change faction description
+    FORCHANGE: for changing faction description
+    DESCRIPTION: Change the faction description
+    TOOLONG: '&cDescription too long! Limit is %s characters.'
+  DISBAND:
+    IMMUTABLE: '&7You cannot disband the Wilderness, SafeZone, or WarZone.'
+    MARKEDPERMANENT: '&7This faction is designated as permanent, so you cannot disband
+      it.'
+    BROADCAST:
+      YOURS: '&d%1$s&7 išformavai savo frakciją.'
+      NOTYOURS: '&d%1$s&7 išformavo frakciją %2$s.'
+    HOLDINGS: '&7You have been given the disbanded faction''s bank, totaling %1$s.'
+    DESCRIPTION: Disband a faction
+  FLY:
+    DESCRIPTION: Enter or leave Faction flight mode
+    CHANGE: '&7Faction flight &d%1$s'
+    DAMAGE: '&7Faction flight &ddisabled&7 due to entering combat'
+    'NO':
+      ACCESS: '&cCannot fly in territory of %1$s'
+    ENEMY:
+      NEARBY: '&cCannot enable fly, enemy nearby'
+      DISABLE: '&cEnemy nearby, disabling fly'
+    AUTO: '&7Faction auto flight &d%1$s'
+  FWARP:
+    CLICKTOWARP: Click to warp!
+    COMMANDFORMAT: '&7/f warp <warpname> [password]'
+    WARPED: '&7Warped to &6%1$s'
+    INVALID:
+      PASSWORD: '&4Invalid password!'
+      WARP: '&7Couldn''t find warp &6%1$s'
+    TOWARP: to warp
+    FORWARPING: for warping
+    WARPS: 'Warps: '
+    DESCRIPTION: Teleport to a faction warp
+    PASSWORD:
+      REQUIRED: '&cThis faction warp requires a password, use command instead'
+      CANCEL: '&cWarp canceled'
+    NOACCESS: '&cYou do not have permission to use %s &cwarps'
+  HELP:
+    '404': '&cThis page does not exist'
+    NEXTCREATE: '&7Learn how to create a faction on the next page.'
+    HOME: '&7And don''t forget to set your home:'
+    BANK:
+      '1': '&7Your faction has a bank which is used to pay for certain'
+      '2': '&7things, so it will need to have money deposited into it.'
+      '3': '&7To learn more, use the money command.'
+    PLAYERTITLES: '&7Player titles are just for fun. No rules connected to them.'
+    OWNERSHIP:
+      '1': '&7Claimed land with ownership set is further protected so'
+      '2': '&7that only the owner(s), faction admin, and possibly the'
+      '3': '&7faction moderators have full access.'
+    RELATIONS:
+      '1': '&7Set the relation you WISH to have with another faction.'
+      '2': '&7Your default relation with other factions will be neutral.'
+      '3': '&7If BOTH factions choose "ally" you will be allies.'
+      '4': '&7If ONE faction chooses "enemy" you will be enemies.'
+      '5': '&7You can never hurt members or allies.'
+      '6': '&7You can not hurt neutrals in their own territory.'
+      '7': '&7You can always hurt enemies and players without faction.'
+      '8': ''
+      '9': '&7Damage from enemies is reduced in your own territory.'
+      '10': '&7When you die you lose power. It is restored over time.'
+      '11': '&7The power of a faction is the sum of all member power.'
+      '12': '&7The power of a faction determines how much land it can hold.'
+      '13': '&7You can claim land from factions with too little power.'
+    PERMISSIONS:
+      '1': '&7Only faction members can build and destroy in their own'
+      '2': '&7territory. Usage of the following items is also restricted:'
+      '3': '&7Door, Chest, Furnace, Dispenser, Diode.'
+      '4': ''
+      '5': '&7Make sure to put pressure plates in front of doors for your'
+      '6': '&7guest visitors. Otherwise they can''t get through. You can'
+      '7': '&7also use this to create member only areas.'
+      '8': '&7As dispensers are protected, you can create traps without'
+      '9': '&7worrying about those arrows getting stolen.'
+    ADMIN:
+      '1': '&b/f claim safezone &7claim land for the Safe Zone'
+      '2': '&b/f claim warzone &7claim land for the War Zone'
+      '3': '&b/f autoclaim [safezone|warzone] &7take a guess'
+    MOAR:
+      '1': 'Finally some commands for the server admins:'
+      '2': '&7More commands for server admins:'
+      '3': '&7Even more commands for server admins:'
+    DESCRIPTION: Display a help page
+  HOME:
+    DISABLED: '&cSorry, Faction homes are disabled on this server.'
+    TELEPORTDISABLED: '&cSorry, the ability to teleport to Faction homes is disabled
+      on this server.'
+    NOHOME: '&cYour faction does not have a home. '
+    INENEMY: '&cYou cannot teleport to your faction home while in the territory of
+      an enemy faction.'
+    WRONGWORLD: '&cYou cannot teleport to your faction home while in a different world.'
+    ENEMYNEAR: '&cYou cannot teleport to your faction home while an enemy is within
+      %s blocks of you.'
+    TOTELEPORT: to teleport to your faction home
+    FORTELEPORT: for teleporting to your faction home
+    DESCRIPTION: Teleport to the faction home
+    DENIED: '&cSorry, you cannot teleport to the home of %s'
+    WARPSREMAIN: '&cCannot delete home while the faction has warps!'
+  INVITE:
+    TOINVITE: to invite someone
+    FORINVITE: for inviting someone
+    CLICKTOJOIN: Click to join!
+    INVITEDYOU: ' has invited you to join '
+    INVITED: '%1$s&7 invited %2$s&7 to your faction.'
+    ALREADYMEMBER: '%1$s&7 is already a member of %2$s'
+    DESCRIPTION: Invite a player to your faction
+    BANNED: '&7%1$s &cis banned from your Faction. Not sending an invite.'
+  JOIN:
+    CANNOTFORCE: '&cYou do not have permission to move other players into a faction.'
+    SYSTEMFACTION: '&cPlayers may only join normal factions. This is a system faction.'
+    ALREADYMEMBER: '&c%1$s %2$s already a member of %3$s'
+    ATLIMIT: ' &c!<white> The faction %1$s is at the limit of %2$d members, so %3$s
+      cannot currently join.'
+    INOTHERFACTION: '&c%1$s must leave %2$s current faction first.'
+    NEGATIVEPOWER: '&c%1$s cannot join a faction with a negative power level.'
+    REQUIRESINVITATION: '&7This faction requires invitation.'
+    ATTEMPTEDJOIN: '%1$s&7 tried to join your faction.'
+    TOJOIN: to join a faction
+    FORJOIN: for joining a faction
+    SUCCESS: '&7%1$s successfully joined %2$s.'
+    MOVED: '&7%1$s moved you into the faction %2$s.'
+    JOINED: '&7%1$s joined your faction.'
+    JOINEDLOG: '%1$s joined the faction %2$s.'
+    MOVEDLOG: '%1$s moved the player %2$s into the faction %3$s.'
+    DESCRIPTION: Join a faction
+    BANNED: '&cYou are banned from %1$s &c:('
+  KICK:
+    CANDIDATES: 'Players you can kick: '
+    CLICKTOKICK: 'Click to kick '
+    SELF: '&cYou cannot kick yourself.'
+    NONE: That player is not in a faction.
+    NOTMEMBER: '%1$s&c is not a member of %2$s'
+    INSUFFICIENTRANK: '&cYour rank is too low to kick this player.'
+    NEGATIVEPOWER: '&cYou cannot kick that member until their power is positive.'
+    TOKICK: kad išmesti žaidėją iš frakcijos
+    FORKICK: už žaidėjo išmetimą iš frakcijos
+    FACTION: '%1$s&7 išmetė %2$s&7 iš frakcijos'
+    KICKS: '&7Išmetei %1$s&7 iš frakcijos %2$s&7!'
+    KICKED: '%1$s&7 išmetė tave iš frakcijos %2$s&7!'
+    DESCRIPTION: Kick a player from the faction
+    ENEMYTERRITORY: '&cYou cannot kick a player in enemy territory'
+  LIST:
+    FACTIONLIST: 'Faction List '
+    TOLIST: to list the factions
+    FORLIST: for listing the factions
+    ONLINEFACTIONLESS: 'Online factionless: '
+    DESCRIPTION: See a list of the factions
+  LOCK:
+    LOCKED: '&7Factions is now locked'
+    UNLOCKED: '&7Factions in now unlocked'
+    DESCRIPTION: Lock all write stuff. Apparently.
+  LOGINS:
+    TOGGLE: '&7Set login / logout notifications for Faction members to: &6%s'
+    DESCRIPTION: Toggle(?) login / logout notifications for Faction members
+  MAP:
+    TOSHOW: to show the map
+    FORSHOW: for showing the map
+    UPDATE:
+      ENABLED: '&7Map auto update <green>ENABLED.'
+      DISABLED: '&7Map auto update <red>DISABLED.'
+    DESCRIPTION: Show the territory map, and set optional auto update
+  MAPHEIGHT:
+    DESCRIPTION: '&7Update the lines that /f map sends'
+    SET: '&7Set /f map lines to &a%1$d'
+    CURRENT: '&7Current mapheight: &a%1$d'
+  MOD:
+    CANDIDATES: 'Players you can promote: '
+    CLICKTOPROMOTE: 'Click to promote '
+    NOTMEMBER: '%1$s&c is not a member in your faction.'
+    NOTADMIN: '&cYou are not the faction admin.'
+    SELF: '&cThe target player musn''t be yourself.'
+    TARGETISADMIN: '&cThe target player is a faction admin. Demote them first.'
+    REVOKES: '&7You have removed moderator status from %1$s&7.'
+    REVOKED: '%1$s&7 is no longer moderator in your faction.'
+    PROMOTES: '%1$s&7 was promoted to moderator in your faction.'
+    PROMOTED: '&7You have promoted %1$s&7 to moderator.'
+    DESCRIPTION: Give or revoke moderator rights
+  MODIFYPOWER:
+    ADDED: '&7Added &6%1$f &7power to &6%2$s. &7New total rounded power: &6%3$d'
+    DESCRIPTION: Modify the power of a faction/player
+  MONEY:
+    LONG: '&7The faction money commands.'
+    DESCRIPTION: Faction money commands
+  MONEYBALANCE:
+    SHORT: show faction balance
+    DESCRIPTION: Show your factions current money balance
+  MONEYDEPOSIT:
+    DESCRIPTION: Deposit money
+    DEPOSITED: '%1$s deposited %2$s in the faction bank: %3$s'
+  MONEYTRANSFERFF:
+    DESCRIPTION: Transfer f -> f
+    TRANSFER: '%1$s transferred %2$s from the faction "%3$s" to the faction "%4$s"'
+  MONEYTRANSFERFP:
+    DESCRIPTION: Transfer f -> p
+    TRANSFER: '%1$s transferred %2$s from the faction "%3$s" to the player "%4$s"'
+  MONEYTRANSFERPF:
+    DESCRIPTION: Transfer p -> f
+    TRANSFER: '%1$s transferred %2$s from the player "%3$s" to the faction "%4$s"'
+  MONEYWITHDRAW:
+    DESCRIPTION: Withdraw money
+    WITHDRAW: '%1$s withdrew %2$s from the faction bank: %3$s'
+  NEAR:
+    DESCRIPTION: Show nearby faction members
+    PLAYER: '&a&l{role-prefix}&8{name} (&d{distance}m&8)'
+    PLAYERLIST: '&7Near: {players-nearby}'
+    NONE: '&8None'
+  OPEN:
+    TOOPEN: to open or close the faction
+    FOROPEN: for opening or closing the faction
+    OPEN: open
+    CLOSED: closed
+    CHANGES: '%1$s&7 changed the faction to &d%2$s&7.'
+    CHANGED: '&7The faction %1$s&7 is now %2$s'
+    DESCRIPTION: Switch if invitation is required to join
+  OWNER:
+    DISABLED: '&cSorry, but owned areas are disabled on this server.'
+    LIMIT: '&cSorry, but you have reached the server''s &dlimit of %1$d &cowned areas
+      per faction.'
+    WRONGFACTION: '&cThis land is not claimed by your faction, so you can''t set ownership
+      of it.'
+    NOTCLAIMED: '&cThis land is not claimed by a faction. Ownership is not possible.'
+    NOTMEMBER: '%1$s&7 is not a member of this faction.'
+    CLEARED: '&7You have cleared ownership for this claimed area.'
+    REMOVED: '&7You have removed ownership of this claimed land from %1$s&7.'
+    TOSET: to set ownership of claimed land
+    FORSET: for setting ownership of claimed land
+    ADDED: '&7You have added %1$s&7 to the owner list for this claimed land.'
+    DESCRIPTION: Set ownership of claimed land
+  OWNERLIST:
+    DISABLED: '&cSorry, but owned areas are disabled on this server.'
+    WRONGFACTION: '&cThis land is not claimed by your faction.'
+    NOTCLAIMED: '&7This land is not claimed by any faction, thus no owners.'
+    NONE: '&7No owners are set here; everyone in the faction has access.'
+    OWNERS: '&7Current owner(s) of this land: %1$s'
+    DESCRIPTION: List owner(s) of this claimed land
+  PEACEFUL:
+    DESCRIPTION: Set a faction to peaceful
+    YOURS: '%1$s has %2$s your faction'
+    OTHER: '%s&7 has %s the faction ''%s&7''.'
+    GRANT: granted peaceful status to
+    REVOKE: removed peaceful status from
+  PERM:
+    DESCRIPTION: '&6Edit or list your Faction''s permissions.'
+    INVALID:
+      RELATION: Invalid relation defined. Try something like 'ally'
+      ACCESS: Invalid access defined. Try something like 'allow'
+      ACTION: Invalid action defined. Try something like 'build'
+    SET: '&aSet permission &7%1$s &ato &b%2$s &afor relation &c%3$s'
+    TOP: RCT MEM OFF ALLY TRUCE NEUT ENEMY
+  PERMANENT:
+    DESCRIPTION: Toggles a faction's permanence
+    GRANT: added permanent status to
+    REVOKE: removed permanent status from
+    YOURS: '%1$s has %2$s your faction'
+    OTHER: '%s&7 has %s the faction ''%s&7''.'
+  PROMOTE:
+    TARGET: You've been %1$s to %2$s
+    SUCCESS: You successfully %1$s %2$s to %3$s
+    PROMOTED: promoted
+    DEMOTED: demoted
+    DESCRIPTION: /f promote <name>
+    WRONGFACTION: '%1$s is not part of your faction.'
+    NOTTHATPLAYER: That player cannot be promoted.
+    NOT:
+      ALLOWED: You can't promote or demote that player.
+  PERMANENTPOWER:
+    DESCRIPTION: Toggle faction power permanence
+    GRANT: added permanentpower status to
+    REVOKE: removed permanentpower status from
+    SUCCESS: '&7You %s &d%s&7.'
+    FACTION: '%s&7 %s your faction'
+  NOACCESS: You don't have access to that.
+  POWER:
+    TOSHOW: to show player power info
+    FORSHOW: for showing player power info
+    POWER: '%1$s&6 - Power / Maxpower: &7%2$d / %3$d %4$s'
+    BONUS: ' (bonus: '
+    PENALTY: ' (penalty: '
+    DESCRIPTION: Show player power info
+  POWERBOOST:
+    HELP:
+      '1': '&cYou must specify "p" or "player" to target a player or "f" or "faction"
+        to target a faction.'
+      '2': '&cex. /f powerboost p SomePlayer 0.5  -or-  /f powerboost f SomeFaction
+        -5'
+    INVALIDNUM: '&cYou must specify a valid numeric value for the power bonus/penalty
+      amount.'
+    PLAYER: Player "%1$s"
+    FACTION: Faction "%1$s"
+    BOOST: '&7%1$s now has a power bonus/penalty of %2$d to min and max power levels.'
+    BOOSTLOG: '%1$s has set the power bonus/penalty for %2$s to %3$d.'
+    DESCRIPTION: Apply permanent power bonus/penalty to specified player or faction
+    UNKNOWN:
+      SUBCOMMAND: '&cUnknown subcommand &d%1$s&c, You can only use&d set&c or&d add'
+  RELATIONS:
+    ALLTHENOPE: '&cNope! You can''t.'
+    MORENOPE: '&cNope! You can''t declare a relation to yourself :)'
+    ALREADYINRELATIONSHIP: '&cYou already have that relation wish set with %1$s.'
+    TOMARRY: to change a relation wish
+    FORMARRY: for changing a relation wish
+    MUTUAL: '&7Your faction is now %1$s&7 to %2$s'
+    PEACEFUL: '&7This will have no effect while your faction is peaceful.'
+    PEACEFULOTHER: '&7This will have no effect while their faction is peaceful.'
+    DESCRIPTION: Set relation wish to another faction
+    EXCEEDS:
+      ME: '&7Failed to set relation wish. You can only have %1$s %2$s.'
+      THEY: '&7Failed to set relation wish. They can only have %1$s %2$s.'
+    PROPOSAL:
+      '1': '%1$s&7 wishes to be your %2$s'
+      '2': '&7Type &b/%1$s %2$s %3$s&7 to accept.'
+      SENT: '%1$s&7 were informed that you wish to be %2$s'
+  RELOAD:
+    TIME: '&7Reloaded &dall configuration files &7from disk, took &d%1$d ms&7.'
+    DESCRIPTION: Reload data file(s) from disk
+  SAFEUNCLAIMALL:
+    DESCRIPTION: Unclaim all safezone land
+    UNCLAIMED: '&7You unclaimed ALL safe zone land.'
+    UNCLAIMEDLOG: '%1$s unclaimed all safe zones.'
+  SAVEALL:
+    SUCCESS: '&7Factions saved to disk!'
+    DESCRIPTION: Save all data to disk
+  SCOREBOARD:
+    DESCRIPTION: Scoreboardy things
+  SETDEFAULTROLE:
+    DESCRIPTION: /f defaultrole <role> - set your Faction's default role.
+    NOTTHATROLE: You cannot set the default to admin.
+    SUCCESS: Set default role of your faction to %1$s
+    INVALIDROLE: Couldn't find matching role for %1$s
+  SETFWARP:
+    NOTCLAIMED: '&7You can only set warps in your faction territory.'
+    LIMIT: '&7Your Faction already has the max amount of warps set &6(%1$d).'
+    SET: '&7Set warp &6%1$s and password &b''%2$s'' &7to your location.'
+    TOSET: to set warp
+    FORSET: for setting warp
+    DESCRIPTION: Set a faction warp
+    HOMEREQUIRED: '&cCannot create warps until a home is set!'
+  SETHOME:
+    DISABLED: '&cSorry, Faction homes are disabled on this server.'
+    NOTCLAIMED: '&cSorry, your faction home can only be set inside your own claimed
+      territory.'
+    TOSET: to set the faction home
+    FORSET: for setting the faction home
+    SET: '%1$s&7 set the home for your faction. You can now use:'
+    SETOTHER: '&cYou have set the home for the %1$s&7 faction.'
+    DESCRIPTION: Set the faction home
+  SETMAXVAULTS:
+    DESCRIPTION: Set max vaults for a Faction.
+    SUCCESS: '&aSet max vaults for &7%s &ato &b%d'
+  VAULT:
+    DESCRIPTION: /f vault <number> to open one of your Faction's vaults.
+    TOOHIGH: '&cYou tried to open vault %d but your Faction only has %d vaults.'
+  SHOW:
+    NOFACTION:
+      SELF: You are not in a faction
+      OTHER: That's not a faction
+    TOSHOW: to show faction information
+    FORSHOW: for showing faction information
+    DESCRIPTION: '&6Description: &7%1$s'
+    PEACEFUL: This faction is Peaceful
+    PERMANENT: '&6This faction is permanent, remaining even with no members.'
+    JOINING: '&6Joining: &7%1$s '
+    INVITATION: invitation is required
+    UNINVITED: no invitation is needed
+    NOHOME: n/a
+    POWER: '&6Land / Power / Maxpower: &7 %1$d/%2$d/%3$d %4$s.'
+    BONUS: ' (bonus: '
+    PENALTY: ' (penalty: '
+    DEPRECIATED: (%1$s depreciated)
+    LANDVALUE: '&6Total land value: &7%1$s %2$s'
+    BANKCONTAINS: '&6Bank contains: &7%1$s'
+    ALLIES: 'Allies: '
+    ENEMIES: 'Enemies: '
+    MEMBERSONLINE: 'Members online: '
+    MEMBERSOFFLINE: 'Members offline: '
+    COMMANDDESCRIPTION: Show faction information
+    DEATHS:
+      TIL:
+        RAIDABLE: '&7DTR: %1$d'
+    EXEMPT: '&cThis faction is exempt and cannot be seen.'
+  SHOWINVITES:
+    PENDING: 'Players with pending invites: '
+    CLICKTOREVOKE: Click to revoke invite for %1$s
+    DESCRIPTION: Show pending faction invites
+  STATUS:
+    FORMAT: '%1$s Power: %2$s Last Seen: %3$s'
+    ONLINE: Online
+    AGOSUFFIX: ' ago.'
+    DESCRIPTION: Show the status of a player
+  STUCK:
+    TIMEFORMAT: m 'minutes', s 'seconds.'
+    CANCELLED: '&6Teleport cancelled because you were damaged'
+    OUTSIDE: '&6Teleport cancelled because you left &7%1$d &6block radius'
+    EXISTS: '&6You are already teleporting, you must wait &7%1$s'
+    START: '&6Teleport will commence in &7%s&6. Don''t take or deal damage. '
+    TELEPORT: '&6Teleported safely to %1$d, %2$d, %3$d.'
+    TOSTUCK: to safely teleport %1$s out
+    FORSTUCK: for %1$s initiating a safe teleport out
+    DESCRIPTION: Safely teleports you out of enemy faction
+  TAG:
+    TAKEN: '&cThat tag is already taken'
+    TOCHANGE: to change the faction tag
+    FORCHANGE: for changing the faction tag
+    FACTION: '%1$s&7 changed your faction tag to %2$s'
+    CHANGED: '&7The faction %1$s&7 changed their name to %2$s.'
+    DESCRIPTION: Change the faction tag
+  TITLE:
+    TOCHANGE: to change a players title
+    FORCHANGE: for changing a players title
+    CHANGED: '%1$s&7 changed a title: %2$s'
+    DESCRIPTION: Set or remove a players title
+  TOGGLEALLIANCECHAT:
+    DESCRIPTION: Toggles whether or not you will see alliance chat
+    IGNORE: Alliance chat is now ignored
+    UNIGNORE: Alliance chat is no longer ignored
+  TOGGLESB:
+    DISABLED: You can't toggle scoreboards while they are disabled.
+  TOP:
+    DESCRIPTION: Sort Factions to see the top of some criteria.
+    TOP: Top Factions by %s. Page %d/%d
+    LINE: '%d. &6%s: &c%s'
+    INVALID: Could not sort by %s. Try balance, online, members, power or land.
+  UNBAN:
+    DESCRIPTION: Unban someone from your Faction
+    NOTBANNED: '&7%s &cisn''t banned. Not doing anything.'
+    UNBANNED: '&7%1$s &cunbanned &7%2$s'
+    TARGET: '&aYou were unbanned from &r%s'
+  UNCLAIM:
+    SAFEZONE:
+      SUCCESS: '&7Safe zone was unclaimed.'
+      NOPERM: '&cThis is a safe zone. You lack permissions to unclaim.'
+    WARZONE:
+      SUCCESS: '&7War zone was unclaimed.'
+      NOPERM: '&cThis is a war zone. You lack permissions to unclaim.'
+    UNCLAIMED: '%1$s&7 unclaimed some of your land.'
+    UNCLAIMS: '&7You unclaimed this land.'
+    LOG: '%1$s unclaimed land at (%2$s) from the faction: %3$s'
+    WRONGFACTION: '&cYou don''t own this land.'
+    TOUNCLAIM: to unclaim this land
+    FORUNCLAIM: for unclaiming this land
+    FACTIONUNCLAIMED: '%1$s&7 unclaimed some land.'
+    DESCRIPTION: Unclaim the land where you are standing
+    WRONGFACTIONOTHER: '&cAttempted to unclaim land for incorrect faction'
+  UNCLAIMALL:
+    TOUNCLAIM: to unclaim all faction land
+    FORUNCLAIM: for unclaiming all faction land
+    UNCLAIMED: '%1$s&7 unclaimed ALL of your faction''s land.'
+    LOG: '%1$s unclaimed everything for the faction: %2$s'
+    DESCRIPTION: Unclaim all of your factions land
+  VERSION:
+    VERSION: '&7You are running %1$s'
+    DESCRIPTION: Show plugin and translation version information
+  WARUNCLAIMALL:
+    DESCRIPTION: Unclaim all warzone land
+    SUCCESS: '&7You unclaimed ALL war zone land.'
+    LOG: '%1$s unclaimed all war zones.'
+  AUTOUNCLAIM:
+    ENABLED: '&7Now auto-unclaiming land for &d%1$s&7.'
+    DISABLED: '&7Auto-unclaiming of land disabled.'
+    OTHERFACTION: '&cYou can''t unclaim land for &d%1$s&c.'
+    DESCRIPTION: Auto-unclaim land as you walk around
+  CLAIMFILL:
+    DESCRIPTION: Claim land filling in a gap in claims
+    ABOVEMAX: '&cThe maximum limit for claim fill is %s.'
+    ALREADYCLAIMED: '&cCannot claim fill using already claimed land!'
+    TOOFAR: '&cThis fill would exceed the maximum distance of %.2f'
+    PASTLIMIT: '&cThis claim would exceed the limit!'
+    NOTENOUGHLANDLEFT: '%s &cdoes not have enough land left to make %d claims'
+    TOOMUCHFAIL: '&cAborting claim fill after %d failures'
+  COORDS:
+    MESSAGE: '&7%s''s location: &6%d&7, &6%d&7, &6%d&7 in &6%s&7'
+    DESCRIPTION: Broadcast your current position to your faction
+  DELHOME:
+    DEL: '%1$s&7 unset the home for your faction.'
+    DESCRIPTION: Unset the faction home
+    TOSET: to unset the faction home
+    FORSET: for unsetting the faction home
+  DTR:
+    TOSHOW: to show faction DTR info
+    FORSHOW: for showing faction DTR info
+    DTR: '%1$s&6 - DTR / Max DTR: &7%2$s / %3$s'
+    DESCRIPTION: Show faction DTR info
+    MODIFY:
+      DESCRIPTION: Modify faction DTR
+      DONE: '&7Set DTR for %s&7 to %s'
+  FLYTRAILS:
+    DESCRIPTION: Enabled or change fly trails
+    PARTICLE:
+      INVALID: '&cInvalid particle effect'
+      PERMS: '&cInsufficient permission to use &d%1s'
+      CHANGE: '&7Faction flight trail effect set to &d%1s'
+    CHANGE: '&7Faction flight trail &d%1s'
+  WARPOTHER:
+    COMMANDFORMAT: '&7/f warpother <faction> <warpname> [password]'
+  LINK:
+    CHANGED: '%s&7 changed their link to:'
+    INVALIDURL: '&cInvalid URL!'
+    TOCHANGE: to change faction link
+    FORCHANGE: for changing faction link
+    SHOW: '%sFaction link: &7%s'
+    DESCRIPTION: Change the faction link
+  LISTCLAIMS:
+    MESSAGE: '&7Claims by %s&7 in %s:'
+    INVALIDWORLD: '&cInvalid world name %s'
+    NOCLAIMS: '&cNo claims by %s&7 in world %s'
+    DESCRIPTION: List your faction's claims
+  PERMS:
+    DESCRIPTION: '&6Edit or list your Faction''s permissions.'
+  TNT:
+    TERRITORYONLY: '&cCommand can only be run from your faction''s territory!'
+    DEPOSIT:
+      DESCRIPTION: Add to your faction's TNT bank
+      FAIL:
+        FULL: '&cFaction bank already at maximum!'
+        NOTENOUGH: '&cYou do not have that much TNT!'
+        POSITIVE: '&cMust deposit at least one!'
+      SUCCESS: '&7Your faction now has %d TNT'
+    FILL:
+      DESCRIPTION: Fill TNT into nearby dispensers
+      MESSAGE: '&7Filled %d TNT into %d dispensers. %d left in the faction bank.'
+      FAIL:
+        MAXRADIUS: '&c%d is bigger than the maximum radius of %d'
+        NOTENOUGH: '&cThe faction bank does not have %d TNT!'
+        POSITIVE: '&cPositive values only!'
+    INFO:
+      DESCRIPTION: View your faction's TNT bank
+      MESSAGE: '&7Your faction has %d TNT'
+    SIPHON:
+      DESCRIPTION: Take TNT from nearby dispensers
+      MESSAGE: '&7Acquired %d TNT, for a total of %d in the faction bank.'
+      FAIL:
+        POSITIVE: '&cPositive values only!'
+        FULL: '&cFaction bank already at maximum!'
+        MAXRADIUS: '&c%d is bigger than the maximum radius of %d'
+    WITHDRAW:
+      DESCRIPTION: Withdraw TNT from the faction bank
+      MESSAGE: '&7Withdrew %d TNT. %d left in the faction bank.'
+      FAIL:
+        NOTENOUGH: '&cThe faction bank does not have %d TNT!'
+        POSITIVE: '&cPositive values only!'
+  SEECHUNK:
+    DESCRIPTION: Show chunk boundaries
+    TOGGLE: '&7Seechunk &d%1$s'
+  TICKETINFO:
+    DESCRIPTION: Create requested ticket info
+  UNCLAIMFILL:
+    DESCRIPTION: Unclaim contiguous land
+    ABOVEMAX: '&cThe maximum limit for unclaim fill is %s.'
+    NOTCLAIMED: '&cCannot unclaim fill using non-claimed land!'
+    TOOFAR: '&cThis unclaim would exceed the maximum distance of %.2f'
+    PASTLIMIT: '&cThis unclaim would exceed the limit!'
+    TOOMUCHFAIL: '&cAborting unclaim fill after %d failures'
+    UNCLAIMED: '%s&7 unclaimed %d claims of your faction''s land around %s.'
+    BYPASSCOMPLETE: '&7Unclaimed %d claims.'
+command:
+  help:
+    invitations: '&7You might want to close it and use invitations:'
+LEAVE:
+  PASSADMIN: '&cYou must give the admin role to someone else first.'
+  NEGATIVEPOWER: '&cYou cannot leave until your power is positive.'
+  TOLEAVE: to leave your faction.
+  FORLEAVE: for leaving your faction.
+  LEFT: '%s&7 left faction %s&7.'
+  DISBANDED: '&7%s&7 frakcija buvo išformuota.'
+  DISBANDEDLOG: The faction %s (%s) was disbanded due to the last player (%s) leaving.
+  DESCRIPTION: Leave your faction
+CLAIM:
+  PROTECTED: '&cThis land is protected'
+  DISABLED: '&cSorry, this world has land claiming disabled.'
+  CANTCLAIM: '&cYou can''t claim land for &d%s&c.'
+  ALREADYOWN: '%s&7 already own this land.'
+  MUSTBE: '&cYou must be &d%s&c to claim land.'
+  MEMBERS: Factions must have at least &d%s&c members to claim land.
+  SAFEZONE: '&cYou can not claim a Safe Zone.'
+  WARZONE: '&cYou can not claim a War Zone.'
+  POWER: '&cYou can''t claim more land! You need more power!'
+  LIMIT: '&cLimit reached. You can''t claim more land!'
+  ALLY: '&cYou can''t claim the land of your allies.'
+  CONTIGIOUS: '&cYou can only claim additional land which is connected to your first
+    claim or controlled by another faction!'
+  FACTIONCONTIGUOUS: '&cYou can only claim additional land which is connected to your
+    first claim!'
+  PEACEFUL: '%s&7 owns this land. Your faction is peaceful, so you cannot claim land
+    from other factions.'
+  PEACEFULTARGET: '%s&7 owns this land, and is a peaceful faction. You cannot claim
+    land from them.'
+  THISISSPARTA: '%s&7 owns this land and is strong enough to keep it.'
+  BORDER: '&cYou must start claiming land at the border of the territory.'
+  TOCLAIM: to claim this land
+  FORCLAIM: for claiming this land
+  TOOVERCLAIM: to overclaim this land
+  FOROVERCLAIM: for over claiming this land
+  CLAIMED: '&d%s&7 claimed land for &d%s&7 from &d%s&7.'
+  CLAIMEDLOG: '%s claimed land at (%s) for the faction: %s'
+  OVERCLAIM:
+    DISABLED: '&7Over claiming is disabled on this server.'
+  TOOCLOSETOOTHERFACTION: '&7Your claim is too close to another Faction. Buffer required
+    is %d'
+  OUTSIDEWORLDBORDER: '&7Your claim is outside the border.'
+  OUTSIDEBORDERBUFFER: '&7Your claim is outside the border. %d chunks away world edge
+    required.'
+  CLICK:
+    TO:
+      CLAIM: Click to try to claim &2(%1$d, %2$d)
+  YOUAREHERE: You are here
+  CANTUNCLAIM: '&cYou can''t unclaim land for &d%s&c.'
+  DTR:
+    LAND: '&cYou can''t claim more land!'
+GENERIC:
+  YOU: Tu
+  YOURFACTION: tavo frakcija
+  NOPERMISSION: '&cNeturi leidimo %1$s.'
+  DOTHAT: do that
+  NOPLAYERMATCH: '&cNo player match found for "&3%1$s&c".'
+  NOPLAYERFOUND: '&cNo player "&3%1$s&c" could not be found.'
+  ARGS:
+    TOOFEW: '&cToo few arguments. &7Use like this:'
+    TOOMANY: '&cStrange argument "&3%1$s&c". &7Use the command like this:'
+  DEFAULTDESCRIPTION: Default faction description :(
+  OWNERS: 'Savininkai: %1$s'
+  PUBLICLAND: Public faction land.
+  FACTIONLESS: factionless
+  SERVERADMIN: A server admin
+  DISABLED: disabled
+  ENABLED: enabled
+  INFINITY: ∞
+  CONSOLEONLY: This command cannot be run as a player.
+  PLAYERONLY: '&cThis command can only be used by ingame players.'
+  ASKYOURLEADER: '&7 Ask your leader to:'
+  YOUSHOULD: '&7You should:'
+  YOUMAYWANT: '&7You may want to: '
+  TRANSLATION:
+    VERSION: 'Translation: %1$s(%2$s,%3$s) State: %4$s'
+    CONTRIBUTORS: 'Translation contributors: %1$s'
+    RESPONSIBLE: 'Responsible for translation: %1$s'
+  FACTIONTAG:
+    TOOSHORT: '&7The faction tag can''t be shorter than &d%1$s&7 chars.'
+    TOOLONG: '&7The faction tag can''t be longer than &d%s&7 chars.'
+    ALPHANUMERIC: '&7Faction tag must be alphanumeric. "&d%s&7" is not allowed.'
+    BLACKLIST: '&7That faction tag is blacklisted.'
+  PLACEHOLDER: <This is a placeholder for a message you should not see>
+  NOFACTIONMATCH: '&cNo faction match found for "&3%1$s&c".'
+  MEMBERONLY: '&cYou are not member of any faction.'
+  DISABLEDWORLD: '&cFactions is disabled in this world.'
+  YOUMUSTBE: '&cYou must be &d%s&c.'
+  ATTACK: attack
+COMPASS:
+  SHORT:
+    NORTH: N
+    EAST: E
+    SOUTH: S
+    WEST: W
+CHAT:
+  MOD: mod chat
+  FACTION: faction chat
+  ALLIANCE: alliance chat
+  TRUCE: truce chat
+  PUBLIC: public chat
+ECON:
+  'OFF': no %s
+  FORMAT: '###,###.###'
+  DISABLED: Faction econ is disabled.
+  OVER:
+    BAL:
+      CAP: '&4The amount &7%s &4is over Essentials'' balance cap.'
+  BALANCE: '&6%s''s&7 balance is &d%s&7.'
+  NOPERM: '&d%s&7 lacks permission to control &d%s''s&7 money.'
+  CANTAFFORD:
+    TRANSFER: '&d%s<b> can''t afford to transfer &d%s<b> to %s<b>.'
+    AMOUNT: '&d%s&7 neturi &d%s&7 %s.'
+  TRANSFER:
+    UNABLE: Unable to transfer %s<b> to &d%s<b> from &d%s<b>.
+    NOINVOKER: '&d%s&7 was transferred from &d%s&7 to &d%s&7.'
+    GAVE: '&d%s&7 &dgave %s&7 to &d%s&7.'
+    TOOK: '&d%s&7 &dtook %s&7 from &d%s&7.'
+    TRANSFER: '&d%s&7 transferred &d%s&7 from &d%s&7 to &d%s&7.'
+  GAIN:
+    SUCCESS: '&d%s&7 gained &d%s&7 %s.'
+    FAILURE: '&d%s&7 would have gained &d%s&7 %s, but the deposit failed.'
+  LOST:
+    SUCCESS: '&d%s&7 sumokėjai &d%s&7 %s.'
+    FAILURE: '&d%s&7 neturi &d%s&7 %s.'
+RELATION:
+  MEMBER:
+    SINGULAR: member
+    PLURAL: members
+  ALLY:
+    SINGULAR: ally
+    PLURAL: allies
+  TRUCE:
+    SINGULAR: truce
+    PLURAL: truces
+  NEUTRAL:
+    SINGULAR: neutral
+    PLURAL: neutrals
+  ENEMY:
+    SINGULAR: enemy
+    PLURAL: enemies
+ROLE:
+  ADMIN: admin
+  COLEADER: coleader
+  MODERATOR: moderator
+  NORMAL: normal member
+  RECRUIT: recruit
+REGION:
+  SAFEZONE: safezone
+  WARZONE: warzone
+  WILDERNESS: wilderness
+  PEACEFUL: peaceful territory
+PLAYER:
+  CANTHURT: '&7You may not harm other players in %s'
+  SAFEAUTO: '&7This land is now a safe zone.'
+  WARAUTO: '&7This land is now a war zone.'
+  OUCH: '&cOuch, that is starting to hurt. You should give it a rest.'
+  USE:
+    WILDERNESS: '&cYou can''t use &d%s&c in the wilderness.'
+    SAFEZONE: '&cYou can''t use &d%s&c in a safe zone.'
+    WARZONE: '&cYou can''t use &d%s&c in a war zone.'
+    TERRITORY: '&cYou can''t &d%s&c in the territory of &d%s&c.'
+    OWNED: '&cYou can''t use &d%s&c in this territory, it is owned by: %s&c.'
+  COMMAND:
+    WARZONE: '&cYou can''t use the command ''%s'' in warzone.'
+    NEUTRAL: '&cYou can''t use the command ''%s'' in neutral territory.'
+    ENEMY: '&cYou can''t use the command ''%s'' in enemy territory.'
+    PERMANENT: '&cYou can''t use the command ''%s'' because you are in a permanent
+      faction.'
+    ALLY: '&cYou can''t use the command ''%s'' in ally territory.'
+    WILDERNESS: '&cYou can''t use the command ''%s'' in the wilderness.'
+    TRUCE: '&cYou can''t use the command ''%s'' in truce territory.'
+  POWER:
+    NOLOSS:
+      PEACEFUL: '&7You didn''t lose any power since you are in a peaceful faction.'
+      WORLD: '&7You didn''t lose any power due to the world you died in.'
+      WILDERNESS: '&7You didn''t lose any power since you were in the wilderness.'
+      WARZONE: '&7You didn''t lose any power since you were in a war zone.'
+    LOSS:
+      WARZONE: |-
+        &cThe world you are in has power loss normally disabled, but you still lost power since you were in a war zone.
+        &7Your power is now &d%d / %d
+    NOW: '&7Your power is now &d%d / %d'
+    VAMPIRISM:
+      GAIN: '&7Stole &d%.2f&7 power from %s&7. Your power is now &d%d / %d'
+  PVP:
+    LOGIN: '&7You can''t hurt other players for %d seconds after logging in.'
+    REQUIREFACTION: '&7You can''t hurt other players until you join a faction.'
+    FACTIONLESS: '&7You can''t hurt players who are not currently in a faction.'
+    PEACEFUL: '&7Peaceful players cannot participate in combat.'
+    NEUTRAL: '&7You can''t hurt neutral factions. Declare them as an enemy.'
+    CANTHURT: '&7Negali daryti žalos žaidėjui %s&7.'
+    NEUTRALFAIL: '&7You can''t hurt %s&7 in their own territory unless you declare
+      them as an enemy.'
+    TRIED: '%s&7 bandė tau trenkti.'
+  PORTAL:
+    NOTALLOWED: '&cDestination portal can''t be created there.'
+  TELEPORTEDONJOIN: '&7You were teleported out of %s territory'
+NOPAGES: '&7Sorry. No Pages available.'
+INVALIDPAGE: '&7Invalid page. Must be between 1 and %1$d'
+title: '&bFactions &0|&r'
+wilderness: '&2Wilderness'
+wilderness-description: ''
+warzone: '&4Warzone'
+warzone-description: Not the safest place to be.
+safezone: '&6Safezone'
+safezone-description: Free from pvp and monsters.
+toggle-sb: You now have scoreboards set to {value}
+faction-leave: '&r'
+faction-enter-title: ''
+faction-enter-subtitle: '%s'
+faction-announcement-top: '&d--Unread Faction Announcements--'
+faction-announcement-bottom: '&d--Unread Faction Announcements--'
+default-prefix: '{relationcolor}[{faction}] &r'
+faction-login: '&7%1$s &9logged in.'
+faction-logout: '&7%1$s &9logged out..'
+nofactions-prefix: '&6[&a4-&6]&r'
+date-format: MM/d/yy h:ma
+raidable-true: 'true'
+raidable-false: 'false'
+WARMUPS:
+  NOTIFY:
+    FLIGHT: '&7Flight will enable in &d%2$d &7seconds.'
+    TELEPORT: '&7You will teleport to &d%1$s &7in &d%2$d &7seconds.'
+  ALREADY: '&cYou are already warming up.'
+  CANCELLED: '&cYou have cancelled your warmup.'
+PLACEHOLDER:
+  ROLE:
+    NAME: None
+  CUSTOM:
+    FACTION: '{faction} '
+PERM:
+  BUILD: Building blocks
+  DESTROY: Breaking blocks
+  PAINBUILD: If allow, can build but hurts to do so
+  ITEM: Using items
+  CONTAINER: Opening any block that can store items
+  BUTTON: Using buttons
+  DOOR: Opening doors
+  LEVER: Using levers
+  PLATE: Using pressure plates
+  FROSTWALK: Walking on water with the frostwalk enchantment
+  INVITE: Inviting others to join the faction
+  KICK: Kicking members from the faction
+  BAN: Banning players from the faction
+  PROMOTE: Promoting members of the faction
+  DISBAND: Disbanding the entire faction
+  ECONOMY: Spending faction money
+  TERRITORY: Claiming or unclaiming faction territory
+  HOME: Visiting the faction home
+  SETHOME: Setting the faction home
+  LISTCLAIMS: View listed faction claims
+  SETWARP: Setting and unsetting faction warps
+  TNTDEPOSIT: Deposit TNT into faction bank
+  TNTWITHDRAW: Withdraw TNT from faction bank
+  WARP: Using faction warps
+  FLY: Flying in faction territory
+  OWNER: Set ownership of land using /f owner in faction territory
+  SHORT:
+    BUILD: build
+    DESTROY: destroy
+    PAINBUILD: painbuild
+    ITEM: use items
+    CONTAINER: open containers
+    BUTTON: use buttons
+    DOOR: open doors
+    LEVER: use levers
+    PLATE: use pressure plates
+    FROSTWALK: frostwalk
+    INVITE: invite
+    KICK: kick
+    BAN: ban
+    PROMOTE: promote
+    DISBAND: disband
+    ECONOMY: spend faction money
+    TERRITORY: manage faction territory
+    HOME: visit home
+    SETHOME: set home
+    LISTCLAIMS: list claims
+    SETWARP: set warps
+    TNTDEPOSIT: deposit TNT
+    TNTWITHDRAW: withdraw TNT
+    WARP: use warps
+    FLY: fly
+    OWNER: set ownership
+  DENIED:
+    WILDERNESS: '&cYou can''t %s in the wilderness'
+    SAFEZONE: '&c>You can''t %s in a safe zone'
+    WARZONE: '&cYou can''t %s in a war zone'
+    TERRITORY: '&cYou can''t %s in the territory of %s'
+    PAINTERRITORY: '&cIt is painful to %s in the territory of %s'
+    OWNED: '&cYou can''t %s in this territory, it is owned by: %s'
+    PAINOWNED: '&cIt is painful to try to %s in this territory, it is owned by: %s'
+GUI:
+  WARPS:
+    ONE:
+      PAGE: '%s warps'
+    PAGE: '%1$s warps (page %2$d)'
+  PERMS:
+    RELATION:
+      NAME: 'Choose a relation%s:'
+      ONLINEOFFLINEBIT: ' (%s)'
+    ACTION:
+      NAME: 'Permissions: %1$s%2$s'
+      ONLINEOFFLINEBIT: ' (%s)'
+      LOCKED: (Locked)
+      ALLOW: Allow
+      DENY: Deny
+    TOGGLE: Toggle online/offline
+    ONLINE: online
+    OFFLINE: offline
+  BUTTON:
+    NEXT: NEXT
+    PREV: PREVIOUS
+    BACK: BACK
+TAG:
+  LEADER:
+    OWNERLESS: Server
+DTR:
+  CANNOT:
+    FROZEN: '&cAction denied due to frozen DTR'
+  KICK:
+    PENALTY: '&cPenalty DTR lost due to kicking with frozen DTR'
+  FROZEN:
+    STATUS:
+      MESSAGE: '%s'
+      'TRUE': Frozen
+      'FALSE': Not frozen
+    TIME:
+      MESSAGE: '%s'
+      NOTFROZEN: ''
